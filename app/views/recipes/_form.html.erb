@@ -1,0 +1,35 @@
+<%= form_with model: @recipe do |form| %>
+  <div class="form">
+    <%= form.label :Navn %><br>
+    <%= form.text_field :label %>
+
+    <%#Validerer title input efter kriterierne i article modellen%>
+    <% @recipe.errors.full_messages_for(:label).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+
+  <div class="form">
+    <%= form.label :Beskrivelse %><br>
+    <%= form.text_area :description %>
+
+    <%#Validerer body input efter kriterierne i article modellen%>
+    <% @recipe.errors.full_messages_for(:description).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+
+  <div class="form">
+    <%= form.label :Billede %><br>
+    <%= form.text_field :imagelink %>
+
+    <%#Validerer title input efter kriterierne i article modellen%>
+    <% @recipe.errors.full_messages_for(:label).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

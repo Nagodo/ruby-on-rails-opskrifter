@@ -1,0 +1,9 @@
+<div class="recipe" >
+    <%= button_to "", recipe_path(recipe), method: :get %>
+
+    <img src="<%= recipe.imagelink %>" alt = "<%= recipe.label %>">
+
+    <p class="label"><%= recipe.label %></p>
+    <div class ="divider"></div>
+    <p class="desc"><%= recipe.description %></p>
+</div>

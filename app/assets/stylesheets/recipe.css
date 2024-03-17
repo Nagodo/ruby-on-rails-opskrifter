@@ -1,0 +1,204 @@
+.recipe {
+	position: relative;
+	
+	width: 100%;
+	height: 10vh;
+
+	background-color: var(--color1);
+
+	margin-bottom: 0.5vh;
+
+    border-radius: var(--border-radius);
+}
+
+.recipe button {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: none;
+	outline: none;
+	border: none;
+
+	z-index: 99;
+}
+
+.recipe img {
+    position: absolute;
+
+    height: 8vh;
+    width: 8vh;
+
+    left: 1vh;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    border-radius: 0.5vh;
+}
+
+.recipe .label {
+    position: absolute;
+
+    left: 9.7vh;
+    top: -1.1vh;
+
+    color: var(--white);
+    font-size: 2.2vh;
+}
+
+.recipe .divider {
+    position: absolute;
+
+    width: 69vh;
+    height: 0.3vh;
+
+    left: 9.7vh;
+    top: 3.6vh;
+
+    background-color: var(--color2);
+    font-size: 2vh;
+
+}
+
+.recipe .desc {
+    position: absolute;
+
+    left: 9.7vh;
+    top: 2.6vh;
+
+    width: 60vh;
+    height: 4vh;
+
+    overflow: hidden;
+
+    color: var(--white);
+    font-size: 1.5vh;
+}
+
+
+.recipe button:hover {
+	cursor: pointer;
+}
+
+.view-recipe {
+    position: absolute;
+
+    width: 70vh;
+    height: 70vh;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    background-color: var(--color1);
+    border-radius: var(--border-radius);
+}
+
+.view-recipe img {
+    position: absolute;
+
+    width: 30vh;
+    height: 30vh;
+
+    top: 1vh;
+    left: 1vh;
+
+    border-radius: var(--border-radius);
+}
+
+.view-recipe .label {
+    position: absolute;
+
+    top: -2vh;
+    left: 32vh;
+
+    color: var(--white);
+    font-size: 3vh;
+}
+
+.view-recipe .top-divider {
+    position: absolute;
+
+    width: 37vh;
+    height: 0.3vh;
+
+    top: 4.8vh;
+    right: 1vh;
+
+    background-color: var(--color2);
+    font-size: 2vh;
+}
+
+.view-recipe .desc {
+    position: absolute;
+
+    top: 4vh;
+    left: 32vh;
+
+    width: 35vh;
+    height: 24vh;
+
+    overflow: hidden;
+
+    color: var(--white);
+    font-size: 1.6vh;
+}
+
+.view-recipe .btns {
+    position: absolute;
+
+    width: 6vh;
+    height: auto;
+
+    left: -6.5vh;
+}
+
+.view-recipe .btns .btn {
+    position: relative;
+
+    width: 6vh;
+    height: 6vh;
+
+    top: 0vh;
+
+    margin-bottom: 0.5vh;
+
+    background-color: var(--color1);
+    border-radius: var(--border-radius);
+}
+
+.view-recipe .btns .btn i {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    font-size: 2.7vh;
+
+    color: var(--white);
+
+}
+
+.view-recipe .btns .btn button {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    background: none;
+    outline: none;
+    border: none;
+    z-index: 99;
+}
+
+.view-recipe .btns .btn:hover {
+    background-color: var(--color2);
+    cursor: pointer;
+}
+
+.view-recipe .btns .btn button:hover {
+    cursor: pointer;
+}

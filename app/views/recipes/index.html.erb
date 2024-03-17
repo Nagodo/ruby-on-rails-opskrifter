@@ -1,0 +1,30 @@
+
+<div class="main">
+    <div class="new-recipe">
+        <%= button_to "Tilføj ny opskrift", new_recipe_path, method: :get %>
+
+    </div>
+    <div class="recipes">
+
+        <% @recipes.each do |recipe| %>
+            <%= render "recipe-list", recipe: recipe %>
+        <% end %>
+    
+    </div>
+
+</div>
+
+<% if false %> <%# Kører igennem alle recipes defineret i controllen%>
+    <h1>Opskrifter metode 1</h1>
+    <ul>
+        <% @recipes.each do |recipe| %>
+
+            <li>
+                <a href="recipes/<%= recipe.id %>">
+                    <%= recipe.label %>
+                </a>
+            </li>
+
+        <% end %>
+    </ul>
+<% end %>

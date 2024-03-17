@@ -1,0 +1,28 @@
+<div class="view-recipe">
+
+    <div class = "btns">
+
+        <div class = "btn">
+            <%= button_to "", recipes_path, method: :get %>
+            <i class="fa-solid fa-backward"></i>
+        </div>
+
+        <div class = "btn">
+            <%= button_to "", edit_recipe_path(@recipe), method: :get %>
+            <i class="fa-solid fa-pen-to-square"></i>
+        </div>
+
+        <div class = "btn">
+            <%= button_to "", recipe_path(@recipe), method: :delete, data: {
+                turbo_confirm: "Er du sikker?"
+            } %>
+            <i class="fa-solid fa-trash-can"></i>
+        </div>
+
+    </div>
+
+    <img src="<%= @recipe.imagelink%>">
+    <p class="label"><%= @recipe.label %></p>
+    <div class="top-divider"></div>
+    <p class="desc"><%= @recipe.description %></p>
+</div>

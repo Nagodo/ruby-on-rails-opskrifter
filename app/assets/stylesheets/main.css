@@ -1,0 +1,71 @@
+* {
+	--border-radius: 0.5vh;
+	
+	--background: #121212;
+	--color1: #282828;
+	--color2: #3f3f3f;
+
+	--white: #cfcfcf;
+}
+
+/* Hide scrollbar */
+::-webkit-scrollbar {
+	display: none;
+}
+
+
+.main {
+	position: absolute;
+	width: 80vh;
+	height: 90vh;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.new-recipe {
+	position: absolute;
+	width: 80vh;
+	height: 6vh;
+	top: 0;
+	
+}
+
+.new-recipe button {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: var(--color1);
+	outline: none;
+	border: none;
+
+	color: var(--white);
+	font-size: 3vh;
+
+	border-radius: var(--border-radius);
+}
+
+.new-recipe button:hover {
+	cursor: pointer;
+	background: var(--color2);
+}
+
+
+.recipes {
+	position: absolute;
+
+	height: 83.5vh;
+	width: 100%;
+
+	bottom: 0vh;
+
+	overflow: auto;
+}
+
+h1 {
+	color: var(--white);
+}
+
+.form {
+	color: var(--white);
+}
